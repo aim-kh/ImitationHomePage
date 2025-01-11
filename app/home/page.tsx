@@ -5,7 +5,7 @@ export function Home () {
     return (
         <div>
             <HomeHeader />
-            <StrengthCardList/>
+            {/* <StrengthCardList/> */}
         </div>
     )
 }

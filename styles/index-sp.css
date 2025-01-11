@@ -1,0 +1,196 @@
+@charset "UTF-8";
+/* =============================================================================
+  @mixin
+   ========================================================================== */
+/*
+  head
+*/
+/* line 8, ../sass/index-sp.scss */
+.param--index.head--letter {
+  padding-top: 50px;
+}
+
+/*
+  rhombus_box
+*/
+/* line 15, ../sass/index-sp.scss */
+.rhombus_box--index {
+  width: 100%;
+  height: 370px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+/* line 21, ../sass/index-sp.scss */
+.rhombus_box--index .slick-prev {
+  top: 45%;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  z-index: 1;
+  background: url("../../img/slide_left.png");
+  background-size: 25px 25px;
+}
+/* line 29, ../sass/index-sp.scss */
+.rhombus_box--index .slick-prev:hover {
+  background: url("../../img/slide_left.png");
+  background-size: 25px 25px;
+  opacity: .8;
+}
+/* line 34, ../sass/index-sp.scss */
+.rhombus_box--index .slick-prev:focus {
+  background: url("../../img/slide_left.png");
+  background-size: 25px 25px;
+}
+/* line 38, ../sass/index-sp.scss */
+.rhombus_box--index .slick-prev:before {
+  display: none;
+}
+/* line 42, ../sass/index-sp.scss */
+.rhombus_box--index .slick-next {
+  top: 45%;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  z-index: 1;
+  background: url("../../img/slide_right.png");
+  background-size: 25px 25px;
+}
+/* line 50, ../sass/index-sp.scss */
+.rhombus_box--index .slick-next:hover {
+  background: url("../../img/slide_right.png");
+  background-size: 25px 25px;
+  opacity: .8;
+}
+/* line 55, ../sass/index-sp.scss */
+.rhombus_box--index .slick-next:focus {
+  background: url("../../img/slide_right.png");
+  background-size: 25px 25px;
+}
+/* line 59, ../sass/index-sp.scss */
+.rhombus_box--index .slick-next:before {
+  display: none;
+}
+
+/* line 65, ../sass/index-sp.scss */
+.section1 {
+  background: url("../../img/sq_bg.png") repeat center center;
+  background-size: 50px;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+/* line 73, ../sass/index-sp.scss */
+.section1 .os_description {
+  width: 90%;
+  margin: 10px auto 20px;
+  line-height: 2.1rem;
+}
+
+/* line 79, ../sass/index-sp.scss */
+.section2 {
+  background: #f8f8f8;
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+/* line 86, ../sass/index-sp.scss */
+.section2 dl.info_box {
+  width: 90%;
+  height: 220px;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  margin: 0px auto 0px;
+  padding: 0;
+}
+/* line 93, ../sass/index-sp.scss */
+.section2 dl.info_box dt {
+  display: inline-block;
+  width: 100%;
+  height: 20px;
+  line-height: 1rem;
+  font-size: 1rem;
+  vertical-align: middle;
+  margin: 10px 0px 5px 0px;
+  text-align: left;
+}
+/* line 102, ../sass/index-sp.scss */
+.section2 dl.info_box dt span {
+  display: inline-block;
+  width: auto;
+  height: 16px;
+  line-height: 16px;
+  color: #fff;
+  background: #2187a4;
+  font-size: .8rem;
+  text-align: center;
+  margin-left: 5px;
+  padding: 0 5px;
+}
+/* line 115, ../sass/index-sp.scss */
+.section2 dl.info_box dd {
+  position: relative;
+  display: block;
+  width: 99%;
+  margin: 0;
+  padding: 0 0 6px 0;
+  text-align: left;
+  vertical-align: top;
+}
+/* line 123, ../sass/index-sp.scss */
+.section2 dl.info_box dd a {
+  color: #333333;
+}
+/* line 126, ../sass/index-sp.scss */
+.section2 dl.info_box dd:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  display: block;
+  border-bottom: dotted 1px #ccc;
+}
+/* line 139, ../sass/index-sp.scss */
+.section2 .more_btn {
+  display: block;
+  width: 150px;
+  height: 35px;
+  margin: 10px auto 10px;
+}
+/* line 145, ../sass/index-sp.scss */
+.section2 .more_btn a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 35px;
+  font-family: "リュウミン R-KL","Ryumin Regular KL","游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0;
+  color: #fff;
+  text-decoration: none;
+  background: #1d1b29;
+  letter-spacing: 0.05rem;
+}
+/* line 155, ../sass/index-sp.scss */
+.section2 .more_btn a:hover {
+  background: #44424b;
+}
+
+/* line 161, ../sass/index-sp.scss */
+dl.info_box::-webkit-scrollbar {
+  background: #ccc;
+  width: 10px;
+}
+
+/* line 165, ../sass/index-sp.scss */
+dl.info_box::-webkit-scrollbar-thumb {
+  background: #aaa;
+}

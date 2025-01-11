@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  reactStrictMode: true,  // Reactの厳密モードを有効にする
+  devIndicators: {
+    buildActivity: true,  // 開発モードでのインジケーター表示
+  },
 };
 
 export default nextConfig;
