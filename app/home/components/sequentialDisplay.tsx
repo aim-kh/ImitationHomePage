@@ -1,11 +1,11 @@
 "use client"
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { CSSTransition } from 'react-transition-group'
 
-const wrapMv = "border-b-0 border-l-0 border-r-0 border-t-0 text-black display-none font-sans text-base \
-    font-normal h-auto leading-5 tracking-wide m-0 p-0"
+const wrapMv = "absolute w-[548px] h-[580px] right-0 top-0 bg-top-right bg-no-repeat bg-cover"
 
-const slider = " box-border display-block list-none relative touch-pan-y select-none"
+const slider = " box-border display-block touch-pan-y select-none absolute right-0 z-0"
 
 type Properties = {src: string, alt: string}
 const properties: Properties[] = [
@@ -38,19 +38,34 @@ export function SequentialDisplay () {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex( (prevIndex) => (prevIndex === maxIndex ? 0 : prevIndex + 1))
-        }, 5000)
+        }, 5000) // 5秒ごとに切り替え
         return () => clearInterval(interval)
     }, [])
     
     return (
         <div className={wrapMv}>
             <Image
-                src={properties[currentIndex].src}
-                alt={properties[currentIndex].alt}
-                width={64}
-                height={64}
-                className={slider}
-            />  
+                src={"/image/bg_mvtxt.png"}
+                alt={"bg-"}
+                width={548}
+                height={580}
+                className="absolute inset-0 w-full h-full object-cover"
+            />
+            <CSSTransition
+                in={true}
+                timeout={1000}
+                classNames="fade-enter opacity-0 transition-opacity duration-1000 ease-in-out"
+                unmountOnExit
+            >
+                <Image
+                    src={properties[currentIndex].src}
+                    alt={properties[currentIndex].alt}
+                    width={410}
+                    height={366}
+                    className={slider}
+                />
+            </CSSTransition>
+
         </div>
 
     )
