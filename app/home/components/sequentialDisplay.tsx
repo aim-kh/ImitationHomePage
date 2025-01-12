@@ -32,13 +32,14 @@ const properties: Properties[] = [
 ]
 
 export function SequentialDisplay () {
-    const [currentIndex, setCurrentIndex] = useState<number>(0);
+    const [currentIndex, setCurrentIndex] = useState<number>(0)
+    const maxIndex = properties.length - 1
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentIndex( (prevIndex) => (prevIndex + 1))
+            setCurrentIndex( (prevIndex) => (prevIndex === maxIndex ? 0 : prevIndex + 1))
         }, 5000)
-        return () => clearInterval(interval);
+        return () => clearInterval(interval)
     }, [])
     
     return (
