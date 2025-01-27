@@ -1,4 +1,4 @@
-import { ClientLink } from "./components/clientLink";
+import { ClientLink } from "./clientLink";
 
 const navBox = "bg-scroll bg-clip-border bg-[#1d1b2c] bg-none bg-origin-padding bg-left-top bg-repeat bg-auto \
     border-0 text-black block font-sans text-sm font-normal h-full tracking-wider leading-normal list-none \

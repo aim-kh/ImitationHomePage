@@ -1,8 +1,9 @@
 "use server"
+import Image from "next/image";
 import { HomeBackGround } from "./components/backGroundImage";
 import { ClientLink } from "./components/clientLink";
 import { SequentialDisplay } from "./components/sequentialDisplay";
-import { HumbergerMenu } from "./humburgerMenu";
+import { HumbergerMenu } from "./components/humburgerMenu";
 
 const mainHeader = "relative w-full block min-h-[380px] md:min-h-[760px] bg-center bg-no-repeat bg-cover";
 
@@ -17,7 +18,15 @@ export async function HomeHeader(){
 
     return (
         <header className={mainHeader}>
-            <HomeBackGround/>
+             <Image
+                src="/image/top_image.jpg"
+                alt="Background Image"
+                layout="intrinsic"  // または layout="responsive"
+                width={1400}
+                height={777}
+                objectFit="cover"
+                className="absolute inset-0 w-full h-full bg-no-repeat bg-center"
+            />
             <HumbergerMenu/>
             <div className={spMenu}>
                 <i></i><i></i><i></i>
