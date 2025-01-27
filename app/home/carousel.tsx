@@ -1,17 +1,11 @@
 "use client"
-
-import { StrengthCard } from "./components/strengthCard"
 import { EmblaOptionsType } from 'embla-carousel'
 import EmblaCarousel from "./components/Embla/EmblaCarousel"
-import useEmblaCarousel from 'embla-carousel-react'
-import Autoplay from 'embla-carousel-autoplay'
-import { ImagePropsArray, LinePropsArray, LinkPropsArray } from "./props/props"
-import { useCallback, useEffect } from "react"
-import EmblaCarousel__ from "./components/Embla/test"
 
 const span = "text-[#2187A4]"
  
-export function EmblaCarousel_() {
+
+export function Carousel() {
     //カルーセルの動作オプション
     const OPTIONS: EmblaOptionsType = {loop: true, slidesToScroll: 1, direction: 'rtl'} 
     //index生成用

@@ -2,7 +2,7 @@ export const ImagePropsArray = [
     {
         src: "/image/slide_icon03.png",
         alt: "インダストリー4.0・スマートファクトリー・製造業におけるIoT",
-        children: "インダストリー4.0・<br/>スマートファクトリー・<br/>製造業におけるIoT"
+        children: <>インダストリー4.0・<br/>スマートファクトリー・<br/>製造業におけるIoT</>
     },
     {
         src: "/image/slide_icon11.png",
