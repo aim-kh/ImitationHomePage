@@ -1,6 +1,6 @@
 "use client"
 import { EmblaOptionsType } from 'embla-carousel'
-import EmblaCarousel from "./components/Embla/EmblaCarousel"
+import EmblaCarousel from "./Embla/EmblaCarousel"
 
 const span = "text-[#2187A4]"
  

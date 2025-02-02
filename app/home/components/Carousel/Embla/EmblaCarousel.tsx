@@ -8,8 +8,8 @@ import {
 } from './EmblaCarouselArrowButtons'
 import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
-import { StrengthCard } from '../strengthCard'
-import { ImagePropsArray, LinePropsArray, LinkPropsArray } from '../../props/props'
+import { StrengthCard } from '../StrengthCard'
+import { ImagePropsArray, LinePropsArray, LinkPropsArray } from '../props/props'
 
 type PropType = {
   slides: number[]

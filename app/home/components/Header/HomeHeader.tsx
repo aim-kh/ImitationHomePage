@@ -1,9 +1,8 @@
 "use server"
 import Image from "next/image";
-import { HomeBackGround } from "./components/backGroundImage";
-import { ClientLink } from "./components/clientLink";
-import { SequentialDisplay } from "./components/sequentialDisplay";
-import { HumbergerMenu } from "./components/humburgerMenu";
+import { ClientLink } from "../clientLink";
+import { SequentialDisplay } from "./SequentialDisplay";
+import { HumbergerMenu } from "./humburgerMenu";
 
 const mainHeader = "relative w-full block min-h-[380px] md:min-h-[760px] bg-center bg-no-repeat bg-cover";
 

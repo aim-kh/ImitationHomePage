@@ -1,12 +1,14 @@
-import { HomeHeader } from "./homeHeader";
-import { Carousel } from "./carousel";
-import "./components/Embla/embla.css"
+import { HomeHeader } from "./components/Header/HomeHeader";
+import { Carousel } from "./components/Carousel/Carousel";
+import "./components/Carousel/Embla/embla.css"
+import { WhatIsNew } from "./components/WhatIsNew/WhatIsNew";
 
 export function Home () {
     return (
-        <div>
+        <>
             <HomeHeader />
             <Carousel />
-        </div>
+            <WhatIsNew/>
+        </>
     )
 }
