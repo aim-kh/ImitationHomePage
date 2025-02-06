@@ -1,43 +1,46 @@
 
 
-const span = "text-[#2187A4]"
+const spanTitleColor = "text-[#2187A4]"
+const spanNewColor = "text-[#0026ff]"
+const descriptionTerm = "font-bold text-base pt-[5] text-[14px] h-[25]"
+const definitionDescription = " pb-[10] pl-[14] border-b text-[14px]"
 export function WhatIsNew () {
 
     return (
         <>
-            <section className="">
+            <section className="pb-[60]">
                 <h2 className="text-center font-serif text-[36px] pt-[60]">
-                    <span className={span}>W</span>hat's <span className={span}>N</span>ew
+                    <span className={spanTitleColor}>W</span>hat's <span className={spanTitleColor}>N</span>ew
                 </h2>
                 <dl className="w-[900] h-[250] mt-[50] overflow-hidden overflow-y-scroll m-auto ">
-                    <dt>
-                        <span>！新規！</span>IT資産を活用して利益を生み出す【IT資産最適化】セミナーのご案内
+                    <dt className={descriptionTerm}>
+                        <span className={spanNewColor}>！新規！</span>IT資産を活用して利益を生み出す【IT資産最適化】セミナーのご案内
                     </dt>
-                    <dd>
+                    <dd className={definitionDescription}>
                         2/21（金）開催<br/>
                         企業が持つIT資産を活用し、売上向上やコスト削減を実現して利益を生みだすIT資産最適化について解説します=&gt; {/* => : =&gt;*/}
                         <a style={{color: "#f00"}} href="./files/it-assets-optimizing-seminar.pdf" target="_blank">詳細はコチラ</a><br/>
                     </dd>
-                    <dt>
-                        <span>！新規！</span>熱中症アラートシステム現場視察会のご案内
+                    <dt className={descriptionTerm}>
+                        <span className={spanNewColor}>！新規！</span>熱中症アラートシステム現場視察会のご案内
                     </dt>
-                    <dd>
+                    <dd className={definitionDescription}>
                         8/19（月）開催<br/>
                         大熊町　学び舎ゆめの森にて、熱中症アラートシステムの現場視察会を行います=&gt;
                         <a style={{color: "#f00"}} href="./files/Info_Alert_System_Inspection_On_Okuma.pdf" target="_blank">詳細はコチラ</a>（終了）<br/>
                     </dd> 
-                    <dt>
-                        <span>！新規！</span>環境省熱中症予防情報サイトに掲載されました
+                    <dt className={descriptionTerm}>
+                        <span className={spanNewColor}>！新規！</span>環境省熱中症予防情報サイトに掲載されました
                     </dt>
-                    <dd>
+                    <dd className={definitionDescription}>
                         環境省熱中症予防情報サイトの民間事業者との取組に弊社熱中症アラートシステムが掲載されました=&gt;
                         <a style={{color: "#f00"}} href=" https://www.wbgt.env.go.jp/private_sector.php" target="_blank">詳細はコチラ</a><br/>
                         サービスの詳細は<a style={{color: "#f00"}} href="https://www.aimnext.co.jp/service/wbgt-iot-service.html" target="_blank">こちら</a>
                     </dd>
-                    <dt>
+                    <dt className={descriptionTerm}>
                         WEBセミナーを追加開催します
                     </dt>
-                    <dd>
+                    <dd className={definitionDescription}>
                         12月8日(金)、12月11日(月)開催<br/>
                         「mcframe導入前に知っておきたい　生産管理・ERP構築を成功に導くRFP作成のポイント」<br/>
                         「mcframe導入前に知っておきたい　事例から学ぶ　失敗しないプロジェクトのはじめかた」<br/>
@@ -47,18 +50,18 @@ export function WhatIsNew () {
                         <a style={{color: "#f00"}} href="https://seminar.mcframe.com/2023_rfp" target="_blank">RFP作成のポイント</a>、
                         <a style={{color: "#f00"}} href="https://seminar.mcframe.com/2023_project" target="_blank">プロジェクトのはじめかた</a>
                     </dd>
-                    <dt>
+                    <dt className={descriptionTerm}>
                         プレスリリース
                     </dt>
-                    <dd>
+                    <dd className={definitionDescription}>
                         熱中症アラートシステムの製造業へのサービス提供を開始しました=&gt;
                         <a style={{color: "#f00"}} href="./files/PR-heat-stroke-alert-system-for-manufacturing.pdf" target="_blank">詳細はコチラ</a><br/>
                         熱中症アラートシステムサービス詳細はこちら＝＞<a style={{color: "#f00"}} href="./service/wbgt-iot-service.html" target="_blank">熱中症アラートシステム</a>
                     </dd> 
-                    <dt>
+                    <dt className={descriptionTerm}>
                         WEBセミナーを追加開催します
                     </dt>
-                    <dd>
+                    <dd className={definitionDescription}>
                         9月12日(火)、9月14日(木)開催<br/>
                         「mcframe導入前に知っておきたい　生産管理・ERP構築を成功に導くRFP作成のポイント」<br/>
                         「mcframe導入前に知っておきたい　事例から学ぶ　失敗しないプロジェクトのはじめかた」<br/>
@@ -69,13 +72,13 @@ export function WhatIsNew () {
                         <a style={{color: "#f00"}} href="https://seminar.mcframe.com/2023_project" target="_blank">プロジェクトのはじめかた</a>
                     </dd>
                 </dl>
-                <div className="more_btn">
+                <div className="w-[150] h-[35] text-center text-white bg-black m-auto">
                     <a href="./archive.html">More</a>
                 </div>
                 {/* <!-- Aimnext Note banner --> */}
-                <picture className="aimnextnote-banner onIndex">
+                <picture className="mt-[30] pl-[15]">
                     <a href="https://www.aimnext.co.jp/note/" target="_blank">
-                    <img src="./img/service/aimnext_note-banner.png" srcSet="./img/service/aimnext_note-banner.png 728w, ./img/service/aimnext_note-banner@2x.png 1456w" alt="AIMNEXT Note" />
+                    <img className="w-[728] m-auto" src="/image/aimnext_note-banner.png" srcSet="/image/aimnext_note-banner.png 728w, /image/aimnext_note-banner@2x.png 1456w" alt="AIMNEXT Note" />
                     </a>
                 </picture>
             </section>
