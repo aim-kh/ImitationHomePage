@@ -1,11 +1,14 @@
-import { HomeHeader } from "./homeHeader";
-import { StrengthCardList } from "./strengthCardList";
+import { HomeHeader } from "./components/Header/HomeHeader";
+import { Carousel } from "./components/Carousel/Carousel";
+import "./components/Carousel/Embla/embla.css"
+import { WhatIsNew } from "./components/WhatIsNew/WhatIsNew";
 
 export function Home () {
     return (
-        <div>
+        <>
             <HomeHeader />
-            <StrengthCardList/>
-        </div>
+            <Carousel />
+            <WhatIsNew/>
+        </>
     )
 }

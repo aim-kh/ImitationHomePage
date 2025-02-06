@@ -1,0 +1,969 @@
+@charset "UTF-8";
+/* =============================================================================
+  @mixin
+   ========================================================================== */
+@import url("./common-pc.css") only screen and (min-width: 769px);
+@import url("./common-sp.css") only screen and (max-width: 769px);
+@import url("./common-print.css") print;
+/*
+	module
+========================================= */
+/*
+	head
+*/
+/* line 17, ../sass/common.scss */
+.section2 h1 {
+  font-family: "リュウミン EB-KL","Ryumin ExtraBold KL","游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0;
+  font-size: 3.6rem;
+  font-weight: bold;
+  line-height: 4.2rem;
+  color: #000;
+  margin: 55px auto;
+}
+/* line 24, ../sass/common.scss */
+.section2 h1:first-letter {
+  color: #2187a4;
+}
+@media only screen and (max-width: 769px) {
+  /* line 17, ../sass/common.scss */
+  .section2 h1 {
+    font-size: 2.4rem;
+    margin: 20px;
+    line-height: 3.2rem;
+  }
+}
+
+/* line 33, ../sass/common.scss */
+.head--letter {
+  font-family: "リュウミン EB-KL","Ryumin ExtraBold KL","游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0;
+  font-size: 3.6rem;
+  font-weight: bold;
+  line-height: 4.2rem;
+  color: #000;
+  margin: 0;
+}
+/* line 40, ../sass/common.scss */
+.head--letter:first-letter {
+  color: #2187a4;
+}
+@media only screen and (max-width: 769px) {
+  /* line 33, ../sass/common.scss */
+  .head--letter {
+    font-size: 2.4rem;
+    margin: 0 20px;
+    line-height: 3.2rem;
+  }
+}
+
+/* line 49, ../sass/common.scss */
+h2 {
+  font-family: "リュウミン EB-KL","Ryumin ExtraBold KL","游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0;
+  font-size: 3.6rem;
+  font-weight: bold;
+  line-height: 10.2rem;
+  color: #000;
+}
+/* line 55, ../sass/common.scss */
+h2:first-letter {
+  color: #2187a4;
+}
+@media only screen and (max-width: 769px) {
+  /* line 49, ../sass/common.scss */
+  h2 {
+    font-size: 2.4rem;
+    margin: 0 20px;
+    line-height: 3.2rem;
+  }
+}
+
+/* line 64, ../sass/common.scss */
+.head--letter_big {
+  font-size: 4.2rem;
+}
+@media only screen and (max-width: 769px) {
+  /* line 64, ../sass/common.scss */
+  .head--letter_big {
+    font-size: 3rem;
+  }
+}
+
+/* line 70, ../sass/common.scss */
+.head--letter__break {
+  display: block;
+  font-size: 3.4rem;
+}
+@media only screen and (max-width: 769px) {
+  /* line 70, ../sass/common.scss */
+  .head--letter__break {
+    font-size: 2.6rem;
+  }
+}
+
+/* line 77, ../sass/common.scss */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 81, ../sass/common.scss */
+a:hover {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  opacity: .8;
+  text-decoration: underline;
+}
+
+/* line 87, ../sass/common.scss */
+img a img:hover {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  opacity: 0.8;
+}
+
+/* line 93, ../sass/common.scss */
+.head--skewer span {
+  position: relative;
+  display: inline-block;
+  color: #333;
+  font-size: 2.4rem;
+  font-family: "リュウミン R-KL","Ryumin Regular KL","游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 101, ../sass/common.scss */
+.head--skewer span:before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: -55px;
+  width: 40px;
+  height: 1px;
+  background-color: #2187a4;
+}
+/* line 110, ../sass/common.scss */
+.head--skewer span:after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: -55px;
+  width: 40px;
+  height: 1px;
+  background-color: #2187a4;
+}
+
+/* line 121, ../sass/common.scss */
+.head--gray {
+  font-family: "リュウミン R-KL","Ryumin Regular KL","游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+  background: #fff;
+  width: auto;
+  height: 35px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 2.0rem;
+  font-weight: bold;
+  line-height: 35px;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  text-align: center;
+  text-indent: 0;
+}
+@media only screen and (max-width: 769px) {
+  /* line 121, ../sass/common.scss */
+  .head--gray {
+    font-size: 1.6rem;
+  }
+}
+
+/* line 142, ../sass/common.scss */
+.head--dark {
+  background-color: #f8f8f8;
+}
+
+@media only screen and (max-width: 769px) {
+  /* line 147, ../sass/common.scss */
+  .head--skewer span {
+    max-width: 64%;
+    font-size: 1.8rem !important;
+  }
+  /* line 150, ../sass/common.scss */
+  .head--skewer span:before {
+    width: 15%;
+    left: -18%;
+  }
+  /* line 154, ../sass/common.scss */
+  .head--skewer span:after {
+    width: 15%;
+    right: -18%;
+  }
+}
+/*
+	btn
+*/
+/* line 165, ../sass/common.scss */
+.pagelink-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 1000px;
+  margin: 0px auto 60px;
+}
+/* line 175, ../sass/common.scss */
+.pagelink-wrap a {
+  text-decoration: none;
+}
+
+/* line 179, ../sass/common.scss */
+.btn {
+  display: block;
+}
+
+/* line 182, ../sass/common.scss */
+.btn--pagelink {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 260px;
+  margin: 0 12px;
+  padding: 15px 30px 33px 30px;
+  color: #fff;
+  font-size: 1.4rem;
+  text-decoration: none;
+  background-color: #3c92ac;
+  box-sizing: border-box;
+  line-height: 1.7rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 769px) {
+  /* line 182, ../sass/common.scss */
+  .btn--pagelink {
+    font-size: 1.2rem;
+  }
+}
+/* line 206, ../sass/common.scss */
+.btn--pagelink span {
+  display: block;
+  position: relative;
+  word-break: break-all;
+}
+/* line 211, ../sass/common.scss */
+.btn--pagelink:after {
+  position: absolute;
+  content: '';
+  bottom: 10px;
+  left: 50%;
+  width: 12px;
+  height: 13px;
+  margin-left: -6px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-image: url(../../img/under_arrow_s.png);
+}
+
+/* line 225, ../sass/common.scss */
+.btn--gray.btn--pagelink {
+  width: 195px;
+  margin: 0 5px;
+  padding-top: 5px;
+  padding-bottom: 25px;
+  padding: 5px 20px 25px 20px;
+  color: #333;
+  background-color: #f8f8f8;
+}
+/* line 233, ../sass/common.scss */
+.btn--gray.btn--pagelink:after {
+  bottom: 5px;
+  background-image: url(../../img/under_arrow_b.png);
+}
+
+@media only screen and (min-width: 769px) {
+  /* line 241, ../sass/common.scss */
+  .btn--pagelink:hover {
+    opacity: .8;
+  }
+}
+@media only screen and (max-width: 769px) {
+  /* line 247, ../sass/common.scss */
+  .pagelink-wrap {
+    /* width: 75%;*/
+    width: auto;
+    margin: 0px 20px 20px;
+  }
+  /* line 251, ../sass/common.scss */
+  .pagelink-wrap.param--2col {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  /* line 257, ../sass/common.scss */
+  .pagelink-wrap.param--2col .btn--pagelink {
+    width: 49%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  /* line 264, ../sass/common.scss */
+  .btn--pagelink {
+    width: auto;
+    margin: 0 5px;
+    padding: 10px 13px 25px 13px;
+    width: 40%;
+  }
+  /* line 269, ../sass/common.scss */
+  .btn--pagelink:after {
+    bottom: 8px;
+    width: 8px;
+    height: 9px;
+    background-size: 8px auto;
+  }
+
+  /* line 277, ../sass/common.scss */
+  .btn--gray.btn--pagelink {
+    width: auto;
+    padding: 5px;
+    padding: 10px 5px 25px 5px;
+  }
+}
+/*
+	list
+*/
+/* line 288, ../sass/common.scss */
+.list--mark_square {
+  text-align: left;
+}
+/* line 290, ../sass/common.scss */
+.list--mark_square li {
+  position: relative;
+  margin-left: 3rem;
+}
+/* line 293, ../sass/common.scss */
+.list--mark_square li:before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #2187a4;
+  font-size: .8rem;
+  left: -1.5rem;
+  top: 9px;
+  margin: 0;
+}
+@media only screen and (max-width: 769px) {
+  /* line 293, ../sass/common.scss */
+  .list--mark_square li:before {
+    width: 4px;
+    height: 4px;
+    top: 1.2em;
+  }
+}
+
+/* line 313, ../sass/common.scss */
+.param--big.list--mark_square li {
+  font-family: "リュウミン R-KL","Ryumin Regular KL","游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  font-weight: bold;
+  margin-left: 18px;
+}
+/* line 319, ../sass/common.scss */
+.param--big.list--mark_square li:before {
+  top: 12px;
+}
+
+/*
+	rhombus_box
+*/
+/* line 329, ../sass/common.scss */
+.rhombus_box {
+  padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  /* justify-content: space-between;
+  width: 1000px; */
+  justify-content: flex-start;
+  width: 1020px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 769px) {
+  /* line 329, ../sass/common.scss */
+  .rhombus_box {
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+/* line 348, ../sass/common.scss */
+.rhombus_box__item {
+  position: relative;
+  display: block;
+  width: 320px;
+  height: 350px !important;
+  border: solid 8px #dcdcdc;
+  /* margin: 50px 0px 60px; */
+  margin: 50px 10px 60px;
+  background: #fff;
+  text-align: center;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 769px) {
+  /* line 348, ../sass/common.scss */
+  .rhombus_box__item {
+    display: inline-block;
+    width: 200px;
+    height: 260px !important;
+    border: solid 4px #dcdcdc;
+    margin: 50px 10px 0;
+  }
+}
+/* line 365, ../sass/common.scss */
+.rhombus_box__item .head {
+  position: absolute;
+  top: -60px;
+  left: calc(50% - 55px);
+}
+@media only screen and (max-width: 769px) {
+  /* line 365, ../sass/common.scss */
+  .rhombus_box__item .head {
+    width: 64px;
+    top: -34px;
+    left: calc(50% - 32px);
+  }
+}
+/* line 375, ../sass/common.scss */
+.rhombus_box__item .line {
+  display: block;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 769px) {
+  /* line 375, ../sass/common.scss */
+  .rhombus_box__item .line {
+    width: 64px;
+  }
+}
+/* line 382, ../sass/common.scss */
+.rhombus_box__item span:nth-of-type(1) {
+  font-family: "リュウミン R-KL","Ryumin Regular KL","游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0;
+  letter-spacing: 0;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: inherit;
+  height: 100px;
+  font-size: 2.0rem;
+  font-weight: bold;
+  line-height: 3.0rem;
+  padding: 50px 0 0;
+}
+@media only screen and (max-width: 769px) {
+  /* line 382, ../sass/common.scss */
+  .rhombus_box__item span:nth-of-type(1) {
+    font-family: "リュウミン R-KL","Ryumin Regular KL","游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0;
+    letter-spacing: 0;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: inherit;
+    height: 70px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    padding: 30px 0 0;
+  }
+}
+/* line 408, ../sass/common.scss */
+.rhombus_box__item span:nth-of-type(2) {
+  display: block;
+  text-align: left;
+  padding: 12px 10px 5px 10px;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 769px) {
+  /* line 408, ../sass/common.scss */
+  .rhombus_box__item span:nth-of-type(2) {
+    padding: 12px 0px 5px 10px;
+  }
+}
+/* line 418, ../sass/common.scss */
+.rhombus_box__item .more_btn {
+  position: absolute;
+  left: calc(50% - 75px);
+  bottom: 27px;
+  width: 150px;
+  height: 35px;
+  display: inline-block;
+  line-height: 35px;
+  font-size: 1.7rem;
+  font-family: "リュウミン R-KL","Ryumin Regular KL","游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0;
+  color: #fff;
+  text-decoration: none;
+  background: #1d1b29;
+  letter-spacing: 0.05rem;
+}
+/* line 432, ../sass/common.scss */
+.rhombus_box__item .more_btn:hover {
+  background: #44424b;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+@media only screen and (max-width: 769px) {
+  /* line 418, ../sass/common.scss */
+  .rhombus_box__item .more_btn {
+    left: calc(50% - 50px);
+    bottom: 20px;
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 1.4rem;
+  }
+}
+
+/* line 447, ../sass/common.scss */
+.rhombus_box__item--more {
+  color: #eeeeee;
+  font-size: 6.0rem;
+  line-height: 6.0rem;
+  letter-spacing: .1rem;
+  text-align: left;
+  font-weight: bold;
+  border: 0;
+}
+/* line 455, ../sass/common.scss */
+.rhombus_box__item--more p {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@media only screen and (max-width: 769px) {
+  /* line 447, ../sass/common.scss */
+  .rhombus_box__item--more {
+    height: auto !important;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    padding: 30px 0;
+  }
+}
+
+/*
+	drop_nav
+*/
+/* line 473, ../sass/common.scss */
+.section1 h1 {
+  display: inline-block;
+  padding: 60px 0;
+  font-size: 3.4rem;
+  letter-spacing: .1rem;
+}
+
+/* line 480, ../sass/common.scss */
+.section1 .drop_nav .btn {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid 1px #1d1b2c;
+  vertical-align: middle;
+  background: #1d1b2c;
+  width: 220px;
+  height: 45px;
+  margin: 0px 6px 0;
+  font-size: 1.6rem;
+  line-height: 45px;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  text-align: left;
+  text-indent: 25px;
+  color: #fff;
+  top: 0;
+}
+@media only screen and (max-width: 769px) {
+  /* line 480, ../sass/common.scss */
+  .section1 .drop_nav .btn {
+    width: auto;
+    height: auto;
+    margin: 0;
+    margin-top: 10px;
+    padding-right: 30px;
+    font-size: 1.2rem;
+    text-indent: 8px;
+    line-height: 2em;
+  }
+}
+/* line 508, ../sass/common.scss */
+.section1 .drop_nav .btn:hover {
+  cursor: pointer;
+  opacity: .8;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+/* line 514, ../sass/common.scss */
+.section1 .drop_nav .btn:after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 17px;
+  bottom: 13px;
+  background: url("../../img/menu_down.png") no-repeat center center;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+@media only screen and (max-width: 769px) {
+  /* line 514, ../sass/common.scss */
+  .section1 .drop_nav .btn:after {
+    right: 0px;
+    top: 50%;
+    margin-top: -9px;
+    right: 2px;
+    background: url("../../img/menu_down.png") no-repeat center center;
+    background-size: 14px;
+  }
+}
+/* line 534, ../sass/common.scss */
+.section1 .drop_nav .btn_open:after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 17px;
+  bottom: 13px;
+  background: url("../../img/menu_minus2.png") no-repeat center center;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+@media only screen and (max-width: 769px) {
+  /* line 534, ../sass/common.scss */
+  .section1 .drop_nav .btn_open:after {
+    right: 0px;
+    top: 50%;
+    margin-top: -9px;
+    right: 2px;
+    background: url("../../img/menu_minus2.png") no-repeat center center;
+    background-size: 14px;
+  }
+}
+/* line 553, ../sass/common.scss */
+.section1 .drop_nav ul {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  line-height: normal;
+  top: 0;
+  display: none;
+}
+/* line 561, ../sass/common.scss */
+.section1 .drop_nav ul li {
+  background: #1d1b2c;
+  width: 100%;
+  display: list-item;
+  box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: .3rem 0 .2rem;
+}
+@media only screen and (max-width: 769px) {
+  /* line 561, ../sass/common.scss */
+  .section1 .drop_nav ul li {
+    padding: 0;
+  }
+}
+/* line 572, ../sass/common.scss */
+.section1 .drop_nav ul li a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  text-align: left;
+  width: 100%;
+  display: inline-block;
+  padding: 10px 0;
+  padding-left: calc(50% - 140px);
+  font-size: 1.5rem;
+  letter-spacing: .05rem;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 769px) {
+  /* line 572, ../sass/common.scss */
+  .section1 .drop_nav ul li a {
+    text-indent: -.5rem;
+    margin-left: 1rem;
+    width: 90%;
+    padding: 5px 0 5px 10px;
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+    letter-spacing: .05rem;
+  }
+}
+/* line 593, ../sass/common.scss */
+.section1 .drop_nav ul li a:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  left: -5px;
+  width: 8px;
+  height: 12px;
+  background: url("../../img/drop_menu_arrow.png") no-repeat center center;
+  background-size: 7px;
+}
+/* line 604, ../sass/common.scss */
+.section1 .drop_nav ul li a:hover {
+  background: #2187a4;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+/* line 609, ../sass/common.scss */
+.section1 .drop_nav ul li a:hover:before {
+  background: url("../../img/drop_menu_arrow_h.png") no-repeat center center;
+}
+@media only screen and (max-width: 769px) {
+  /* line 614, ../sass/common.scss */
+  .section1 .drop_nav ul li:first-child {
+    padding-top: .5rem;
+  }
+}
+@media only screen and (max-width: 769px) {
+  /* line 619, ../sass/common.scss */
+  .section1 .drop_nav ul li:last-child {
+    padding-bottom: .5rem;
+  }
+}
+/* line 626, ../sass/common.scss */
+.section1 .drop_nav ul li.active a {
+  background: #2187a4;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+@media only screen and (max-width: 769px) {
+  /* line 630, ../sass/common.scss */
+  .section1 .drop_nav ul li.active a:before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    left: -5px;
+    width: 8px;
+    height: 12px;
+    background: url("../../img/drop_menu_arrow_h.png") no-repeat center center;
+    background-size: 7px;
+  }
+}
+/* line 645, ../sass/common.scss */
+.section1 .drop_nav ul li.nav_mask {
+  border-top: solid 10px #1d1b2c;
+  width: 100%;
+  height: 2000px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: list-item;
+  box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  float: left;
+}
+
+/* line 663, ../sass/common.scss */
+.param--service.drop_nav ul li a {
+  padding-left: calc(50% - 240px);
+}
+
+/* Added by Fukuda in Oct 2018 */
+@media only screen and (min-width: 769px) {
+  .section1 .drop_nav { display: none !important; }
+}
+
+
+/*
+	section
+*/
+/* line 676, ../sass/common.scss */
+[class^="section"] .description,
+[class*=" section"] .description {
+  width: 830px;
+  margin: 40px auto 50px;
+  text-align: left;
+  /* span{*/
+  /*   background: -webkit-linear-gradient(transparent 60%, $waterblue 60%);*/
+  /*   background: linear-gradient(transparent 60%, $waterblue 60%);*/
+  /* }*/
+}
+@media only screen and (max-width: 769px) {
+  /* line 676, ../sass/common.scss */
+  [class^="section"] .description,
+  [class*=" section"] .description {
+    width: 90%;
+    margin: 20px auto 20px;
+  }
+}
+
+/*
+	module
+*/
+/* line 694, ../sass/common.scss */
+.tac {
+  text-align: center !important;
+}
+
+/* line 697, ../sass/common.scss */
+.tal {
+  text-align: left !important;
+}
+
+/* line 700, ../sass/common.scss */
+.marker {
+  /* @include minchob();*/
+  background: -webkit-linear-gradient(transparent 70%, #d1edf5 70%);
+  background: linear-gradient(rgba(0, 0, 0, 0) 70%, #d1edf5 70%);
+}
+
+/* BEGIN addition by Fukuda in Oct 2018 */
+
+/* =============================================================================
+パンくず
+========================================================================== */
+/* Added by Fukuda in Oct 2018 */
+nav.breadcrumb { background: #1d1b2c; }
+
+nav.breadcrumb > ul {
+  /*max-width: 1032px;*/
+  max-width: 1180px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  margin: 0 auto;
+}
+
+nav.breadcrumb > ul > li { position: relative; }
+
+/* Arrow */
+nav.breadcrumb > ul > span {
+  content: '';
+  display: block;
+  position: static;
+
+  border-top: 1px solid #0094af;
+  border-right: 1px solid #0094af;
+  transform: rotate(45deg);
+}
+
+nav.breadcrumb > ul > li:first-child:before {
+  display: none;
+}
+
+/* Link and span */
+nav.breadcrumb a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav.breadcrumb > ul > li > span {
+  background: #1c637a;
+  color: #eee;
+}
+
+nav.breadcrumb > ul > li > a,
+nav.breadcrumb > ul > li > span {
+  border-radius: 3px;
+  display: inline-block;
+}
+
+nav.breadcrumb > ul > li.hasChild > a {
+  border-radius: 3px 3px 0 0;
+}
+
+/* Hover */
+nav.breadcrumb > ul > li:hover > a { background: #1c637a; }
+nav.breadcrumb > ul > li > a:hover { background: #00556c; }
+
+/* Child menu */
+nav.breadcrumb > ul > li > ul {
+  background: #1c637a;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  display: none;
+  list-style: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 100%;
+  z-index: 1;
+}
+
+nav.breadcrumb > ul > li > ul > li > a {
+  display: block;
+  padding: 7px 11px;
+}
+
+nav.breadcrumb > ul > li > ul > li > a:hover {
+  background: #00556c;
+  opacity: 1;
+}
+
+/* =============================================================================
+AIMNEXT Note Banner
+========================================================================== */
+picture.aimnextnote-banner {
+  box-sizing: border-box;
+  display: block;
+  width:  100%;
+  max-width: 758px;
+  padding: 0 15px;
+}
+
+picture.aimnextnote-banner > a {
+  outline: 1px solid #ddd;
+  display: block;
+}
+picture.aimnextnote-banner > a:hover { opacity: .6; }
+picture.aimnextnote-banner > a > img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+/* END addtion by Fukuda in Oct 2018 */
