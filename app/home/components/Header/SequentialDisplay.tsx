@@ -3,9 +3,6 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { CSSTransition } from 'react-transition-group'
 
-const wrapMv = "absolute w-[548px] h-[580px] right-0 top-0 bg-top-right bg-no-repeat bg-cover"
-
-const slider = " box-border display-block touch-pan-y select-none absolute right-0 z-0"
 
 type Properties = {src: string, alt: string}
 const properties: Properties[] = [
@@ -43,7 +40,7 @@ export function SequentialDisplay () {
     }, [])
     
     return (
-        <div className={wrapMv}>
+        <div className="absolute w-[548px] h-[580px] right-0 top-0 bg-top-right bg-no-repeat bg-cover z-0">
             <Image
                 src={"/image/bg_mvtxt.png"}
                 alt={"bg-"}
@@ -62,7 +59,7 @@ export function SequentialDisplay () {
                     alt={properties[currentIndex].alt}
                     width={410}
                     height={366}
-                    className={slider}
+                    className="box-border display-block touch-pan-y select-none absolute right-0 z-0"
                 />
             </CSSTransition>
 
