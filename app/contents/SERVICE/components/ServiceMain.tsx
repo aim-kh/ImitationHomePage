@@ -1,6 +1,6 @@
-import { AimNote } from "../../../Components/Common/AimNote/AimNote";
-import { StrengthCard } from "../../../Components/Home/Carousel/StrengthCard";
-import { ImagePropsArray, LinePropsArray, LinkPropsArray } from '../../../Components/Home/Carousel/props/props'
+import { AimNote } from "../../../components/Common/AimNote/AimNote";
+import { StrengthCard } from "../../../components/Home/Carousel/StrengthCard";
+import { ImagePropsArray, LinePropsArray, LinkPropsArray } from '../../../components/Home/Carousel/props/props'
 
 export function ServiceMain() {
     const SLIDE_COUNT = 10
