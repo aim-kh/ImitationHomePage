@@ -1,9 +1,9 @@
-import { HomeHeader } from "./components/Header/HomeHeader";
-import { Carousel } from "./components/Carousel/Carousel";
-import "./components/Carousel/Embla/embla.css"
-import { WhatIsNew } from "./components/WhatIsNew/WhatIsNew";
-import { Footer } from "./components/Footer/Footer";
-import { HumbergerMenu } from "./components/Header/HumburgerMenu";
+import { HomeHeader } from "../Components/Home/Header/HomeHeader";
+import { Carousel } from "../Components/Home/Carousel/Carousel";
+import "../Components/Home/Carousel/Embla/embla.css"
+import { WhatIsNew } from "../Components/Home/WhatIsNew/WhatIsNew";
+import { Footer } from "../Components/Common/Footer/Footer";
+import { HumbergerMenu } from "../Components/Home/Header/HumburgerMenu";
 
 export function Home () {
     return (

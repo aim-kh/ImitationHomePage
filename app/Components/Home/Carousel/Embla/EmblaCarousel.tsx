@@ -10,6 +10,7 @@ import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
 import { StrengthCard } from '../StrengthCard'
 import { ImagePropsArray, LinePropsArray, LinkPropsArray } from '../props/props'
+import './embla.css'; 
 
 type PropType = {
   slides: number[]
@@ -18,7 +19,11 @@ type PropType = {
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
   const { slides, options } = props
-  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()])
+  const autoplayOptions = {
+    delay: 4000, // 4秒ごとにスライド
+    stopOnInteraction: false, // ユーザー操作で停止しない
+  }
+  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay(autoplayOptions)])
 
   const onNavButtonClick = useCallback((emblaApi: EmblaCarouselType) => {
     const autoplay = emblaApi?.plugins()?.autoplay
@@ -45,19 +50,19 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   } = usePrevNextButtons(emblaApi, onNavButtonClick)
 
   return (
-    <section className="h-[400] w-full">
-        <div className="overflow-hidden" ref={emblaRef}>
-        <div className="flex justify-center touch-pan-y touch-pinch-zoop">
-            {slides.map((index) => (
-            <div className="flex-shrink-0" key={index}>
-                <StrengthCard
-                    ImageProps={ImagePropsArray[index]}
-                    LineProps={LinePropsArray[index]}
-                    LinkProps={LinkPropsArray[index]}
-                />
-            </div>
-            ))}
-        </div>
+    <section className="embla">
+        <div className="embla__viewport" ref={emblaRef}>
+          <div className="embla__container">
+              {slides.map((index) => (
+              <div key={index} className='embla__slide'>
+                  <StrengthCard
+                      ImageProps={ImagePropsArray[index]}
+                      LineProps={LinePropsArray[index]}
+                      LinkProps={LinkPropsArray[index]}
+                  />
+              </div>
+              ))}
+          </div>
         </div>
 
       <div className="embla__controls">

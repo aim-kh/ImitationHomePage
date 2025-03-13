@@ -1,3 +1,4 @@
+import { AimNote } from "../../Common/AimNote/AimNote"
 
 
 const spanTitleColor = "text-[#2187A4]"
@@ -72,15 +73,11 @@ export function WhatIsNew () {
                         <a style={{color: "#f00"}} href="https://seminar.mcframe.com/2023_project" target="_blank">プロジェクトのはじめかた</a>
                     </dd>
                 </dl>
-                <div className="w-[150] h-[35] text-center text-white bg-black m-auto">
+                <div className="w-[150] h-[35] text-center text-white bg-black m-auto flex items-center justify-center">
                     <a href="./archive.html">More</a>
                 </div>
                 {/* <!-- Aimnext Note banner --> */}
-                <picture className="mt-[30] pl-[15]">
-                    <a href="https://www.aimnext.co.jp/note/" target="_blank">
-                    <img className="w-[728] m-auto" src="/image/aimnext_note-banner.png" srcSet="/image/aimnext_note-banner.png 728w, /image/aimnext_note-banner@2x.png 1456w" alt="AIMNEXT Note" />
-                    </a>
-                </picture>
+                <AimNote />
             </section>
         </>
     )

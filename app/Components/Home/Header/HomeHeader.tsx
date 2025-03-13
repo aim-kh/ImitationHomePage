@@ -19,9 +19,11 @@ export async function HomeHeader(){
                 <i></i><i></i><i></i>
             </div>
             <SequentialDisplay />
-            <HumbergerMenu />
-            <div className="top_wrap">
-                <nav className="main_nav">
+            <HumbergerMenu 
+                CustomClassName="bg-black opacity-70 border-white text-[#fff] hover:opacity-40 mt-[60px]"
+            />
+            <div>
+                <nav>
                     <ul>
                         <li> {/*href は後程修正 */}
                             <Link href="./service/index.html">SERVICE</Link> 

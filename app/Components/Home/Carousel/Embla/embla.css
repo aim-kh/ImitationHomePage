@@ -1,24 +1,23 @@
 .embla {
-  max-width: 48rem;
-  margin: auto;
-  --slide-height: 19rem;
-  --slide-spacing: 1rem;
-  --slide-size: 29%;
+  overflow: hidden;
+  width: 100%;
 }
 .embla__viewport {
   overflow: hidden;
+  width: 100%;
 }
 .embla__container {
   display: flex;
   touch-action: pan-y pinch-zoom;
-  margin-left: calc(var(--slide-spacing) * -1);
+  /* margin-left: calc(var(--slide-spacing) * -1); */
+  gap: 10px; /* カードの間隔 */
 }
-.embla__slide {
+/* .embla__slide {
   transform: translate3d(0, 0, 0);
-  flex: 0 0 var(--slide-size);
-  min-width: 0;
-  padding-left: var(--slide-spacing);
-}
+  flex: 0 0 300px; 
+  min-width: 300px;
+} */
+
 .embla__slide__number {
   box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
   border-radius: 1.8rem;

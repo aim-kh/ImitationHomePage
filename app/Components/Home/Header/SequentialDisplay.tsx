@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { CSSTransition } from 'react-transition-group'
+import clsx from "clsx";
 
 
 type Properties = {src: string, alt: string}
@@ -40,14 +41,10 @@ export function SequentialDisplay () {
     }, [])
     
     return (
-        <div className="absolute w-[548px] h-[580px] right-0 top-0 bg-top-right bg-no-repeat bg-cover z-0">
-            <Image
-                src={"/image/bg_mvtxt.png"}
-                alt={"bg-"}
-                width={548}
-                height={580}
-                className="absolute inset-0 w-full h-full object-cover"
-            />
+        <div className={clsx(
+            "absolute w-[548px] h-[580px] right-0 top-0 z-0",
+            "bg-top-right bg-no-repeat bg-cover bg-[url('/image/bg_mvtxt.png')]"
+        )}>
             <CSSTransition
                 in={true}
                 timeout={1000}
@@ -59,7 +56,7 @@ export function SequentialDisplay () {
                     alt={properties[currentIndex].alt}
                     width={410}
                     height={366}
-                    className="box-border display-block touch-pan-y select-none absolute right-0 z-0"
+                    className="box-border block touch-pan-y mt-[90px] mx-[20px] select-none absolute right-0 z-0"
                 />
             </CSSTransition>
 
