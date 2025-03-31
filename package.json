@@ -14,9 +14,10 @@
     "embla-carousel": "^8.5.2",
     "embla-carousel-autoplay": "^8.5.2",
     "embla-carousel-react": "^8.5.2",
-    "next": "^15.1.7",
+    "next": "^15.2.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-scroll": "^1.9.3",
     "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
@@ -24,6 +25,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/react-scroll": "^1.8.10",
     "@types/react-transition-group": "^4.4.12",
     "eslint": "^9",
     "eslint-config-next": "15.1.3",
