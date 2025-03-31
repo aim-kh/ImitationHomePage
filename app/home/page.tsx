@@ -1,11 +1,12 @@
-import { HomeHeader } from "../../Components/Home/Header/HomeHeader";
-import { Carousel } from "../../Components/Home/Carousel/Carousel";
-import "../../Components/Home/Carousel/Embla/embla.css"
-import { WhatIsNew } from "../../Components/Home/WhatIsNew/WhatIsNew";
-import { Footer } from "@Components/Common/Footer/Footer";
+
+import { Carousel } from "app/home/components/HomeMain";
+import "./components/Carousel/embla.css";
+import { Footer } from "@components/Common/Footer/Footer";
+import { HomeHeader } from "./components/HomeHeader";
+import { WhatIsNew } from "./components/WhatIsNew";
 
 
-export function Home () {
+export default function Home () {
     return (
         <>
             <HomeHeader />
