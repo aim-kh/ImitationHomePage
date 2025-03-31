@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ContentsTitle } from "../ContentsTitle";
+import { ContentsTitle } from "../../../../Components/Contents/ContentsTitle";
 
 
 export function RecruitMain(){

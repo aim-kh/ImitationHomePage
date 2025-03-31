@@ -1,4 +1,4 @@
-import { Line } from "../../../../Components/Common/Line";
+import { Line } from "@Components/Common/Line";
 
 
 interface Achievement {

@@ -1,6 +1,6 @@
-import { Card } from "../../Common/Card";
-import { ContentsTitle } from "../ContentsTitle";
-import { ImagePropsArray, LinePropsArray, LinkPropsArray } from "../../../constants/CompanyMainCardProps";
+import { Card } from "../../../../Components/Common/Card";
+import { ContentsTitle } from "../../../../Components/Contents/ContentsTitle";
+import { ImagePropsArray, LinePropsArray, LinkPropsArray } from "Constants/CompanyMainCardProps";
 
 
 export function CompanyMain() {

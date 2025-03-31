@@ -1,7 +1,7 @@
 
-import { AimNote } from "@components/Common/AimNote/AimNote";
-import { ContentsTitle } from "../ContentsTitle";
-import { Card } from '@components/Common/Card';
+import { AimNote } from "@Components/Common/AimNote/AimNote";
+import { ContentsTitle } from "../../../../Components/Contents/ContentsTitle";
+import { Card } from '@Components/Common/Card';
 import { ImagePropsArray, LinePropsArray, LinkPropsArray } from "Constants/CarouselProps";
 
 export function ServiceMain() {

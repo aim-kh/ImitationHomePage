@@ -1,8 +1,8 @@
 import { Line } from "Components/Common/Line";
 import { ScrollButton } from "Components/Common/ScrollButton";
 import { ContentsTitle } from "Components/Contents/ContentsTitle";
-import { ServiceArticle } from "Components/Contents/ServiceArticle";
-import { PerspectiveArticleProps, SolutionServiceProps } from "constants/ServiceIndustryProps";
+import { ServiceArticle } from "app/Contents/SERVICE/ServiceContents/Industry/Components/ServiceArticle";
+import { PerspectiveArticleProps, SolutionServiceProps } from "Constants/ServiceIndustryProps";
 
 
 

@@ -1,7 +1,7 @@
 import { Achievements } from "./Achievements";
-import { BusinessConsultingProps, SoftwareEngineeringProps, SystemIntegrationProps } from "../../../constants/AchivementsProps";
-import { ScrollButton } from "../../Common/ScrollButton";
-import { ContentsTitle } from "../ContentsTitle";
+import { ScrollButton } from "../../../../Components/Common/ScrollButton";
+import { ContentsTitle } from "../../../../Components/Contents/ContentsTitle";
+import { BusinessConsultingProps, SoftwareEngineeringProps, SystemIntegrationProps } from "Constants/AchivementsProps";
 
 
 export function CaseMain () {

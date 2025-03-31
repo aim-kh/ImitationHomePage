@@ -1,7 +1,7 @@
 import { Footer } from "../../../Components/Common/Footer/Footer";
 import { BreadCrumbs } from "../../../Components/Contents/BreadCrumbs";
 import { ContentsHeader } from "../../../Components/Contents/ContentsHeader";
-import { CompanyMain } from "../../../Components/Contents/Company/CompanyMain";
+import { CompanyMain } from "./Components/CompanyMain";
 
 
 

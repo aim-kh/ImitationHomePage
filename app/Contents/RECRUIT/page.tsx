@@ -1,7 +1,7 @@
 import { Footer } from "../../../Components/Common/Footer/Footer";
 import { BreadCrumbs } from "../../../Components/Contents/BreadCrumbs";
 import { ContentsHeader } from "../../../Components/Contents/ContentsHeader";
-import { RecruitMain } from "../../../Components/Contents/Recuit/RecruitMain";
+import { RecruitMain } from "./Components/RecruitMain";
 
 
 export default function ServiceHome () {

@@ -1,4 +1,3 @@
-import { imageConfigDefault } from "next/dist/shared/lib/image-config";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -79,7 +78,7 @@ export function Footer () {
                     Copyright AIMNEXT Inc. All Rights Reserved.
                 </p>
                 <a href="#top" className="goto_top">
-                    <img src="../../img/goto_page_top.png"/>
+                    <img src="../../image/goto_page_top.png"/>
                     Page Top
                 </a>
                 

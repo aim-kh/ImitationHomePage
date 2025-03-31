@@ -1,7 +1,7 @@
 import { Footer } from "../../../Components/Common/Footer/Footer";
 import { BreadCrumbs } from "../../../Components/Contents/BreadCrumbs";
 import { ContentsHeader } from "../../../Components/Contents/ContentsHeader";
-import { ContactMain } from "../../../Components/Contents/Contact/ContactMain";
+import { ContactMain } from "./Components/ContactMain";
 
 
 export default function ServiceHome () {
