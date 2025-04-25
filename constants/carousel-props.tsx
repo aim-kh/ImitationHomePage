@@ -106,43 +106,43 @@ export const LinePropsArray = [
 
 export const LinkPropsArray = [
     {
-        href: "/Contents/SERVICE/ServiceContents/Industry",
+        href: "/service/industry",
         children: "More"
     },
     {
-        href: "service/scm-production-area.html" ,
+        href: "/service/scm-production" ,
         children: "More"
     },
     {
-        href: "service/product-development-area.html" ,
+        href: "service/product-development" ,
         children: "More"
     },
     {
-        href: "service/human-resources-area.html" ,
+        href: "service/training" ,
         children: "More"
     },
     {
-        href: "service/overseas-expansion-global-area.html" ,
+        href: "service/overseas" ,
         children: "More"
     },
     {
-        href: "service/system-implement-management-area.html" ,
+        href: "service/system-implement" ,
         children: "More"
     },
     {
-        href: "service/software-quality-improvement-area.html" ,
+        href: "service/software-quality-improvement" ,
         children: "More"
     },
     {
-        href: "service/modernise-convert-area.html" ,
+        href: "service/modernise" ,
         children: "More"
     },
     {
-        href: "service/regional-IoT-platform.html" ,
+        href: "service/regional-iot-platform" ,
         children: "More"
     },
     {
-        href: "service/technology-enabled-area.html" ,
+        href: "service/technology" ,
         children: "More"
     }
 ]

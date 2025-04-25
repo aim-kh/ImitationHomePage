@@ -77,7 +77,7 @@ export const SolutionServiceProps = [
     {
         title:"Industry 4.0に対応したい",
         href:"",
-        descriptoin:"IoTやCPS、更にIoSといったものを活用した、新しい工場・製造業への転換をご支援いたします。"
+        description:"IoTやCPS、更にIoSといったものを活用した、新しい工場・製造業への転換をご支援いたします。"
     },
     {
         title:"スマートファクトリー実現に必要な人材",

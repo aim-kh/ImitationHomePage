@@ -1,7 +1,7 @@
-import { Footer } from "../../../../../Components/Common/Footer/Footer";
-import { BreadCrumbs } from "../../../../../Components/Contents/BreadCrumbs";
-import { ContentsHeader } from "../../../../../Components/Contents/ContentsHeader";
-import { IndustryMain } from "./Components/IndustryMain";
+import { Footer } from "@components/Common/Footer/Footer";
+import { BreadCrumbs } from "@components/Contents/BreadCrumbs";
+import { ContentsHeader } from "@components/Contents/ContentsHeader";
+import { IndustryMain } from "./IndustryMain";
 
 
 export default function page () {

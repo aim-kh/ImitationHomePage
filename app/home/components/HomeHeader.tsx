@@ -1,6 +1,6 @@
 "use server"
 import { SequentialDisplay } from "./SequentialDisplay";
-import { HumbergerMenu } from "@components/Common/HumburgerMenu";
+import { ContentsMenu } from "@components/Common/ContentsMenu";
 import Link from "next/link";
 import clsx from "clsx";
 
@@ -19,7 +19,7 @@ export async function HomeHeader(){
                 <i></i><i></i><i></i>
             </div>
             <SequentialDisplay />
-            <HumbergerMenu 
+            <ContentsMenu 
                 CustomClassName="bg-black opacity-70 border-white text-[#fff] hover:opacity-40 mt-[60px]"
             />
             <div>

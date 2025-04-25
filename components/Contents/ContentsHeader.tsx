@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { HumbergerMenu } from "../Common/HumburgerMenu";
+import { ContentsMenu } from "../Common/ContentsMenu";
 
 
 interface classNameProps {
@@ -28,7 +28,7 @@ export function ContentsHeader(props: classNameProps) {
                         height={51}
                     />
                 </Link>
-                <HumbergerMenu
+                <ContentsMenu
                     CustomClassName={`${props.CustomClassName} text-[14px] border-[#1d1b2c]] text-[#1d1b2c] hover:opacity-80 hover:bg-[#1d1b2c] hover:text-[#ffffff]`}
                     ServiceClassName={props.ServiceClassName || ""}
                     CaseClassName={props.CaseClassName || ""}
