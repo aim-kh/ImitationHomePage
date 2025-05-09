@@ -22,27 +22,6 @@ export async function HomeHeader(){
             <ContentsMenu 
                 CustomClassName="bg-black opacity-70 border-white text-[#fff] hover:opacity-40 mt-[60px]"
             />
-            <div>
-                <nav>
-                    <ul>
-                        <li> {/*href は後程修正 */}
-                            <Link href="./service/index.html">SERVICE</Link> 
-                        </li>
-                        <li>
-                            <Link href="./case/index.html">CASE</Link>
-                        </li>
-                        <li>
-                            <Link href="./company/index.html">COMPANY</Link>
-                        </li>
-                        <li>
-                            <Link href="./recruit/index.html">RECRUIT</Link>
-                        </li>
-                        <li>
-                            <Link href="./contact.html">CONTACT</Link>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
         </header>
     )
 }

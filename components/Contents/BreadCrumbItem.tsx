@@ -2,7 +2,7 @@ import { breadCrumbNameMap , breadCrumbTree} from "constants/bread_crumb_name_ma
 import Link from "next/link";
 
 
-export function breadCrumbItem () {
+export function BreadCrumbItem () {
     const breadCrumbItemList = Object.keys(breadCrumbNameMap);
 
     return(
