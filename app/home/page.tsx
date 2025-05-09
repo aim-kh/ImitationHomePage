@@ -1,14 +1,14 @@
-import { HomeHeader } from "./components/Header/HomeHeader";
-import { Carousel } from "./components/Carousel/Carousel";
-import "./components/Carousel/Embla/embla.css"
-import { WhatIsNew } from "./components/WhatIsNew/WhatIsNew";
-import { Footer } from "./components/Footer/Footer";
-import { HumbergerMenu } from "./components/Header/HumburgerMenu";
 
-export function Home () {
+import { Carousel } from "app/home/components/HomeMain";
+import "./components/Carousel/embla.css";
+import { Footer } from "@components/Common/Footer/Footer";
+import { HomeHeader } from "./components/HomeHeader";
+import { WhatIsNew } from "./components/WhatIsNew";
+
+
+export default function Home () {
     return (
         <>
-            {/* <HumbergerMenu/> */}
             <HomeHeader />
             <Carousel />
             <WhatIsNew/>
