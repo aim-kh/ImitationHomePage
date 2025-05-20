@@ -1,4 +1,4 @@
-import { ServicePageFormat } from "@components/Layouts/ServicePageFormat";
+import { ServicePageFormat } from "@components/Contents/Layouts/ServicePageFormat";
 import { perspectiveArticleProps, solutionServiceProps } from "constants/overseas-props";
 
 

@@ -56,29 +56,55 @@ export function Footer () {
                     </li>
                 </ul>
             </div>
-            <div className="relative bg-[#1d1b29] pt-[12px] text-center text-white">
+            <div className="bg-[#1d1b29] text-center text-white text-[12px]">
                 <div className="w-[328px] text-left inline-block">
                     <img className="w-[123px]" src="/image/top_logo.png" alt="logo" />
-                    <span className="pt-[18px] text-[12px] block">〒105-0014</span>
+                    <span className="pt-[18px] block">〒105-0014</span>
                     <span className="pt-[10px] block">東京都港区芝1-10-13 芝日景有楽ビル７F</span>
-                    <a className="" href="">
-                        <img src="/image/mail_icon.png" alt="mail_icon" />
-                    </a>
-                    <span className="block text-[18px] pt-[15px] tracking-[0.1rem]">03-3453-3900</span>
-                    <span className="block text-[10px] mt-[-8px]">受付：9:00〜18:00(土日祝除く)</span>
+                        <Link className="inline-block mt-[10px]" href="">
+                            <img src="/image/mail_icon.png" alt="mail_icon" />
+                        </Link>
+                        <div className="inline-block ml-[10px]">
+                            <span className="block text-[18px] pt-[1px]">03-3453-3900</span>
+                            <span className="block text-[10px] mt-[-8px]">受付：9:00〜18:00(土日祝除く)</span>
+                        </div>
                 </div>
 
-                <div className="w-[660px] inline-block text-left">
-                    <p><a href="">新着情報</a></p>
-                    <p><a href="">サービスを探す</a></p>
-                    <p><a href="">インダストリー4.0・スマートファクトリー・製造業におけるIoT</a></p>
-                    <p><a href="">　/　 SCM・生産管理・品質管理</a></p>
+                <div className="w-[660px] inline-block text-left text-[12px] tracking-[0.8px] leading-[22px]">
+                    <p><Link href="">新着情報</Link></p>
+                    <p><Link href="/service">サービスを探す</Link></p>
+                    <p className="ml-[30px]">
+                        <Link href="/service/industry">インダストリー4.0・スマートファクトリー・製造業におけるIoT</Link>
+                        　/　 
+                        <Link href="/service/scm-production">SCM・生産管理・品質管理</Link>
+                        <br />
+                        <Link href="/service/product-development">PDM・製品開発・コスト削減</Link>
+                        　/　 
+                        <Link href="/service/training">人材育成</Link> 
+                        　/　 
+                        <Link href="/service/overseas">海外進出(東南アジア、中南米)・グローバル化支援</Link>
+                        <br />
+                        <Link href="/service/system-implement">IT統制・ITアウトソーシング・システム開発及び運用</Link>
+                        　/　 
+                        <Link href="/service/software-quality-improvement">ソフトウェア・品質・改善</Link>
+                        <br />
+                        <Link href="/service/modernise">ITモダナイゼーション・アーキテクチャ最新化</Link>
+                        　/　 
+                        <Link href="/service/regional-iot-platform">IoT企画・開発支援/自治体スマートタウン構築</Link>
+                        <br />
+                        <Link href="/service/technology">テクノロジー～探求と挑戦～</Link>
+                    </p>
+                    <p><Link href="/case">実績</Link></p>
+                    <p><Link href="/company">会社情報</Link></p>
+                    <p><Link href="/recruit">採用情報</Link></p>
+                    <p><Link href="/site-map">サイトマップ</Link></p>
+                    <p><Link href="/privacy-policy">プライバシーポリシー</Link></p>
                 </div>
                 <p className="font-hirakaku mt-[12px] py-[10px] text-[10px] w-[1000px] mt-[12px] m-auto font-lighter border-t border-[#fff]">
                     Copyright AIMNEXT Inc. All Rights Reserved.
                 </p>
-                <a href="#top" className="goto_top">
-                    <img src="../../image/goto_page_top.png"/>
+                <a href="#top" className="absolute bottom-[20px] right-[20px]">
+                    <img src="/image/goto_page_top.png" alt="page top"/>
                     Page Top
                 </a>
                 
