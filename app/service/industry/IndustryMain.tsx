@@ -1,5 +1,5 @@
 import { PerspectiveArticleProps, SolutionServiceProps } from "constants/service-industry-props";
-import { ServicePageFormat } from "@components/Layouts/ServicePageFormat";
+import { ServicePageFormat } from "@components/Contents/Layouts/ServicePageFormat";
 
 
 
