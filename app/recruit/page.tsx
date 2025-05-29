@@ -15,5 +15,5 @@ export default function ServiceHome () {
             <Footer/>
         </div>
         
-    )@
+    )
 }
