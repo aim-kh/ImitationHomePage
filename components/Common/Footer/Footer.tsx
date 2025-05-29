@@ -56,21 +56,23 @@ export function Footer () {
                     </li>
                 </ul>
             </div>
-            <div className="bg-[#1d1b29] text-center text-white text-[12px]">
-                <div className="w-[328px] text-left inline-block">
+            <div className="bg-[#1d1b29] pt-[10px] text-center text-white text-[12px]">
+                <div className="align-top w-[328px] text-left inline-block">
                     <img className="w-[123px]" src="/image/top_logo.png" alt="logo" />
                     <span className="pt-[18px] block">〒105-0014</span>
                     <span className="pt-[10px] block">東京都港区芝1-10-13 芝日景有楽ビル７F</span>
-                        <Link className="inline-block mt-[10px]" href="">
-                            <img src="/image/mail_icon.png" alt="mail_icon" />
-                        </Link>
-                        <div className="inline-block ml-[10px]">
-                            <span className="block text-[18px] pt-[1px]">03-3453-3900</span>
-                            <span className="block text-[10px] mt-[-8px]">受付：9:00〜18:00(土日祝除く)</span>
+                        <div className="flex items-center">
+                            <Link className="inline-block mt-[10px]" href="">
+                                <img src="/image/mail_icon.png" alt="mail_icon" />
+                            </Link>
+                            <div className="ml-[15px]">
+                                <span className="block text-[18px] tracking-[0.5px]">03-3453-3900</span>
+                                <span className="block text-[10px] mt-[-8px]">受付：9:00〜18:00(土日祝除く)</span>
+                            </div>
                         </div>
                 </div>
 
-                <div className="w-[660px] inline-block text-left text-[12px] tracking-[0.8px] leading-[22px]">
+                <div className="w-[660px] inline-block text-left text-[12px] tracking-[0.5px] leading-[24px]">
                     <p><Link href="">新着情報</Link></p>
                     <p><Link href="/service">サービスを探す</Link></p>
                     <p className="ml-[30px]">
