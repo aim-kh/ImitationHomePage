@@ -2,37 +2,37 @@ export const ImagePropsArray = [
     {
         src: "/image/CompanyPage/cp_icon01.png",
         alt: "会社概要",
-        children: "会社概要"
+        children: <>会社概要"</>
     },
     {
         src: "/image/CompanyPage/cp_icon02.png",
         alt: "エイムネクストが目指すところ",
-        children: "エイムネクストが目指すところ"
+        children: <>エイムネクストが目指すところ</>
     },
     {
         src: "/image/CompanyPage/cp_icon03.png",
         alt: "エイムネクストの強み",
-        children: "エイムネクストの強み"
+        children: <>エイムネクストの強み</>
     },  
     {
         src: "/image/CompanyPage/cp_icon04.png",
         alt: "役員紹介",
-        children: "役員紹介"
+        children: <>役員紹介</>
     },
     {
         src: "/image/CompanyPage/cp_icon05.png",
         alt: "スタッフ紹介",
-        children: "スタッフ紹介"
+        children: <>スタッフ紹介</>
     }, 
     {
         src: "/image/CompanyPage/cp_icon06.png",
         alt: "出版物紹介",
-        children: "出版物紹介"
+        children: <>出版物紹介</>
     },
     {
         src: "/image/CompanyPage/cp_icon07.png",
         alt: "アクセスマップ",
-        children: "アクセスマップ"
+        children: <>アクセスマップ</>
     }
 ]
 
@@ -76,31 +76,31 @@ export const LinePropsArray = [
 
 export const LinkPropsArray = [
     {
-        href: "https://www.aimnext.co.jp/company/profile.html",
+        href: "/company/profile" ,
         children: "More"
     },
     {
-        href: "service/scm-production-area.html" ,
+        href: "/company/advantage" ,
         children: "More"
     },
     {
-        href: "service/product-development-area.html" ,
+        href: "/company/vision" ,
         children: "More"
     },
     {
-        href: "service/human-resources-area.html" ,
+        href: "/company/leadership" ,
         children: "More"
     },
     {
-        href: "service/overseas-expansion-global-area.html" ,
+        href: "/company/staff" ,
         children: "More"
     },
     {
-        href: "service/system-implement-management-area.html" ,
+        href: "/company/publication" ,
         children: "More"
     },
     {
-        href: "service/system-implement-management-area.html" ,
+        href: "/company/access",
         children: "More"
-    }
+    },
 ]

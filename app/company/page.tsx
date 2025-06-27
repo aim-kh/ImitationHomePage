@@ -4,7 +4,6 @@ import { ContentsHeader } from "@components/Contents/ContentsHeader";
 import { CompanyMain } from "./CompanyMain";
 
 
-
 export default function ServiceHome () {
     return(
         <div>

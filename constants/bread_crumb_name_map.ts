@@ -14,6 +14,14 @@ export const breadCrumbNameMap: Record<string, string> = {
     "/service/regional-IoT-platform":"IoT企画・開発支援/自治体スマートタウン構築",
     "/service/technology":"テクノロジー ～探求と挑戦～",
     "/case":"CASE",
+    "/company": "COMPANY",
+    "/company/profile": "会社概要",
+    "/company/vision": "エイムネクストが目指すところ",
+    "/company/advantage": "エイムネクストの強み",
+    "/company/leadership": "役員紹介",
+    "/company/staff": "スタッフ紹介",
+    "/company/publication": "出版物紹介",
+    "/company/access": "アクセスマップ",
 }
 
 
@@ -40,5 +48,17 @@ export const breadCrumbTree = {
     "/case": {
         name: "CASE",
         children: {}
-    }
+    },
+    "/company": {
+        name: "COMPANY",
+        children: {
+            "/company/profile": "会社概要",
+            "/company/vision": "エイムネクストが目指すところ",
+            "/company/advantage": "エイムネクストの強み",
+            "/company/leadership": "役員紹介",
+            "/company/staff": "スタッフ紹介",
+            "/company/publication": "出版物紹介",
+            "/company/access": "アクセスマップ",
+        }
+    },
 }
