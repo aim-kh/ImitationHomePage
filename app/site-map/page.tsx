@@ -1,20 +1,18 @@
 import { Footer } from "@components/Common/Footer/Footer";
 import { BreadCrumbs } from "@components/Contents/BreadCrumbs";
 import { ContentsHeader } from "@components/Contents/ContentsHeader";
-import { IndustryMain } from "./IndustryMain";
+import { SiteMapMain } from "./components/SiteMapMain";
 
-
-export default function Page () {
-
+export default function page () {
     return(
-        <>
+        <div>
             <ContentsHeader 
-                ServiceClassName="bg-[#1d1b2c] text-[#ffffff] hover:opacity-80"
-                CustomClassName="border border-[#1d1b2c]" 
+                CustomClassName="border border-[#1d1b2c]"    
             />
             <BreadCrumbs/>
-            <IndustryMain/>
+            <SiteMapMain/>
             <Footer/>
-        </>
+        </div>
+        
     )
 }
