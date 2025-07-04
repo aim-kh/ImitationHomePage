@@ -2,8 +2,6 @@ import { PerspectiveArticleProps, SolutionServiceProps } from "constants/service
 import { ServicePageFormat } from "@components/Contents/Layouts/ServicePageFormat";
 
 
-
-
 export function IndustryMain () {
 
     return(

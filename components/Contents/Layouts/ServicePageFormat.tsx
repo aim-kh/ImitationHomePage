@@ -40,9 +40,7 @@ export function ServicePageFormat ({
             </section>
             <section className="pt-[40px] bg-[#f8f8f8] pb-[40px]">
                 <div className="flex justify-center items-center">
-                    <Line/>
-                    <h3 id="p1" className="text-center text-[24px] font-ryumin">Perspective / Article</h3>
-                    <Line/>
+                    <Line id={"p1"} text="Perspective / Article"/>
                 </div>
                 <ul className="w-[730px] mx-auto pt-[40px]">
                     {PERSPECTIVEARTICLESLIDES.map((index) => (
@@ -59,9 +57,7 @@ export function ServicePageFormat ({
             </section> 
             <section className="pt-[60px]">
                 <div className="flex justify-center items-center">
-                    <Line/>
-                    <h3 id="p2" className="text-center text-[24px] font-ryumin">Solution / Service</h3>
-                    <Line/>
+                    <Line id={"p2"} text="Solution / Service"/>
                 </div>
                 <ul className="w-[730px] mx-auto pt-[40px]">
                     {SOLUTIONSERVICESLIDES.map((index) => (

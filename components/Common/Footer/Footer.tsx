@@ -11,7 +11,7 @@ export function Footer () {
                 <li className="w-[300] text-[13px] leading-[24px] align-middle tracking-[1.5px] font-hirakaku">
                     SERVICEについてのお問い合わせ、<br/>
                     ご要望などがありましたら、<br/>
-                    こちらから お問い合わせ下さい。
+                    こちらからお問い合わせ下さい。
                 </li>
                 <li className="w-[370] h-[65px] px-[50px] my-[5px] border-x border-[#455266]">
                     <Image
@@ -21,8 +21,8 @@ export function Footer () {
                         width={48}
                         height={52}
                     />
-                   <span className="text-[30px] font-ryumin">03-3453-3900<br/></span>
-                   <span className="text-[10px] tracking-[1.5px] font-hirakaku">受付：9:00〜18:00(土日祝除く)</span>
+                   <span className="ml-[10px] text-[30px] font-ryumin tracking-[0.5]">03-3453-3900<br/></span>
+                   <span className="ml-[10px] text-[10px] tracking-[1.5px] font-hirakaku">受付：9:00〜18:00(土日祝除く)</span>
                 </li>
                 <li className="w-[330px] flex justify-end">
                     <a href="" className="w-[280px] h-[70px]  text-[#fff] bg-[#1d1b29] flex justify-center items-center">
