@@ -46,6 +46,7 @@ export function SequentialDisplay() {
         fadeEffect={{crossFade: true}}
         loop
         speed={1500}
+        threshold={80}
         className="h-full"
       >
         {properties.map(({ src, alt }, idx) => (
