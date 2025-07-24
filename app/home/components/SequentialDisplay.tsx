@@ -1,8 +1,11 @@
 "use client"
-import { useEffect, useState } from "react";
-import Image from "next/image";
-import { CSSTransition } from 'react-transition-group'
-import clsx from "clsx";
+
+import { Swiper, SwiperSlide } from "swiper/react"
+import { EffectFade } from "swiper/modules"
+import Image from "next/image"
+import "swiper/css"
+import "swiper/css/effect-fade"
+import clsx from "clsx"
 
 
 type Properties = {src: string, alt: string}
@@ -29,38 +32,36 @@ const properties: Properties[] = [
     }
 ]
 
-export function SequentialDisplay () {
-    const [currentIndex, setCurrentIndex] = useState<number>(0)
-    const maxIndex = properties.length - 1
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex( (prevIndex) => (prevIndex === maxIndex ? 0 : prevIndex + 1))
-        }, 5000) // 5秒ごとに切り替え
-        return () => clearInterval(interval)
-    }, [])
-    
-    return (
-        <div className={clsx(
-            "absolute w-[548px] h-[580px] right-0 top-0 z-0",
-            "bg-top-right bg-no-repeat bg-cover bg-[url('/image/bg_mvtxt.png')]"
-        )}>
-            <CSSTransition
-                in={true}
-                timeout={1000}
-                classNames="fade-enter opacity-0 transition-opacity duration-1000 ease-in-out"
-                unmountOnExit
-            >
-                <Image
-                    src={properties[currentIndex].src}
-                    alt={properties[currentIndex].alt}
-                    width={410}
-                    height={366}
-                    className="box-border block touch-pan-y mt-[90px] mx-[20px] select-none absolute right-0 z-0"
-                />
-            </CSSTransition>
-
-        </div>
-
-    )
+export function SequentialDisplay() {
+  return (
+    <div
+      className={clsx(
+        "absolute w-[548px] h-[580px] right-0 top-0 z-0",
+        "bg-top-right bg-no-repeat bg-cover bg-[url('/image/bg_mvtxt.png')]"
+      )}
+    >
+      <Swiper
+        modules={[EffectFade]}
+        effect="fade"
+        fadeEffect={{crossFade: true}}
+        loop
+        speed={1500}
+        className="h-full"
+      >
+        {properties.map(({ src, alt }, idx) => (
+          <SwiperSlide key={idx}>
+            <div  className="flex justify-end">
+              <Image
+                src={src}
+                alt={alt}
+                width={410}
+                height={366}
+                className="mt-[90px] mr-[20px]"
+              />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  )
 }
