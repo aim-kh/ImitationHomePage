@@ -73,34 +73,34 @@ export function Footer () {
                 </div>
 
                 <div className="w-[660px] inline-block text-left text-[12px] tracking-[0.5px] leading-[24px]">
-                    <p><Link href="">新着情報</Link></p>
-                    <p><Link href="/service">サービスを探す</Link></p>
+                    <p><Link href="" className="hover:underline hover:text-gray-300">新着情報</Link></p>
+                    <p><Link href="/service" className="hover:underline hover:text-gray-300">サービスを探す</Link></p>
                     <p className="ml-[30px]">
-                        <Link href="/service/industry">インダストリー4.0・スマートファクトリー・製造業におけるIoT</Link>
+                        <Link href="/service/industry" className="hover:underline hover:text-gray-300">インダストリー4.0・スマートファクトリー・製造業におけるIoT</Link>
                         　/　 
-                        <Link href="/service/scm-production">SCM・生産管理・品質管理</Link>
+                        <Link href="/service/scm-production" className="hover:underline hover:text-gray-300">SCM・生産管理・品質管理</Link>
                         <br />
-                        <Link href="/service/product-development">PDM・製品開発・コスト削減</Link>
+                        <Link href="/service/product-development" className="hover:underline hover:text-gray-300">PDM・製品開発・コスト削減</Link>
                         　/　 
-                        <Link href="/service/training">人材育成</Link> 
+                        <Link href="/service/training" className="hover:underline hover:text-gray-300">人材育成</Link> 
                         　/　 
-                        <Link href="/service/overseas">海外進出(東南アジア、中南米)・グローバル化支援</Link>
+                        <Link href="/service/overseas" className="hover:underline hover:text-gray-300">海外進出(東南アジア、中南米)・グローバル化支援</Link>
                         <br />
-                        <Link href="/service/system-implement">IT統制・ITアウトソーシング・システム開発及び運用</Link>
+                        <Link href="/service/system-implement" className="hover:underline hover:text-gray-300">IT統制・ITアウトソーシング・システム開発及び運用</Link>
                         　/　 
-                        <Link href="/service/software-quality-improvement">ソフトウェア・品質・改善</Link>
+                        <Link href="/service/software-quality-improvement" className="hover:underline hover:text-gray-300">ソフトウェア・品質・改善</Link>
                         <br />
-                        <Link href="/service/modernise">ITモダナイゼーション・アーキテクチャ最新化</Link>
+                        <Link href="/service/modernise" className="hover:underline hover:text-gray-300">ITモダナイゼーション・アーキテクチャ最新化</Link>
                         　/　 
-                        <Link href="/service/regional-iot-platform">IoT企画・開発支援/自治体スマートタウン構築</Link>
+                        <Link href="/service/regional-iot-platform" className="hover:underline hover:text-gray-300">IoT企画・開発支援/自治体スマートタウン構築</Link>
                         <br />
-                        <Link href="/service/technology">テクノロジー～探求と挑戦～</Link>
+                        <Link href="/service/technology" className="hover:underline hover:text-gray-300">テクノロジー～探求と挑戦～</Link>
                     </p>
-                    <p><Link href="/case">実績</Link></p>
-                    <p><Link href="/company">会社情報</Link></p>
-                    <p><Link href="/recruit">採用情報</Link></p>
-                    <p><Link href="/site-map">サイトマップ</Link></p>
-                    <p><Link href="/privacy-policy">プライバシーポリシー</Link></p>
+                    <p><Link href="/case" className="hover:underline hover:text-gray-300">実績</Link></p>
+                    <p><Link href="/company" className="hover:underline hover:text-gray-300">会社情報</Link></p>
+                    <p><Link href="/recruit" className="hover:underline hover:text-gray-300">採用情報</Link></p>
+                    <p><Link href="/site-map" className="hover:underline hover:text-gray-300">サイトマップ</Link></p>
+                    <p><Link href="/privacy-policy" className="hover:underline hover:text-gray-300">プライバシーポリシー</Link></p>
                 </div>
                 <p className="font-hirakaku mt-[12px] py-[10px] text-[10px] w-[1000px] mt-[12px] m-auto font-lighter border-t border-[#fff]">
                     Copyright AIMNEXT Inc. All Rights Reserved.
